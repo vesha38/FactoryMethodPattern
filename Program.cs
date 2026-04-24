@@ -50,14 +50,14 @@ class Program
         
     }
 
-    public interface IShoeSuplier
+    public interface IShoeSupplier
     {
         
         IShoes CreateShoes();
 
     }
 
-    public class NaturalShoesSupplier_Sneakers : IShoeSuplier
+    public class NaturalShoesSupplier_Sneakers : IShoeSupplier
     {
         
         private string[] shoeMaterials = { "leather"};
@@ -71,7 +71,7 @@ class Program
         }
 
     }
-    public class NaturalShoesSupplier_WomensShoes : IShoeSuplier
+    public class NaturalShoesSupplier_WomensShoes : IShoeSupplier
     {
         
         private string[] shoeMaterials = { "leather"};
@@ -85,7 +85,7 @@ class Program
         }
 
     }
-    public class NaturalShoesSupplier_MensShoes : IShoeSuplier
+    public class NaturalShoesSupplier_MensShoes : IShoeSupplier
     {
         
         private string[] shoeMaterials = { "leather"};
